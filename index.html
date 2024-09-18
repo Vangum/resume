@@ -7,7 +7,7 @@
       name="keywords"
       content="html, css, js, php, python, c#, vue, react"
     />
-    <meta name="description" content="Моё продвижение в вебе" />
+    <meta name="description" content="Resume" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,83 +18,97 @@
     <title>Document</title>
   </head>
   <body>
-    <img
-      src="./img/VG.jpg"
-      alt="Изображение"
-      width="200"
-      style="border-radius: 10px"
-    />
-    <h1>Василий Мавренков</h1>
-    <p>
-      Я студент 3 курса, специальности
-      <em>"Информационные системы и программирование"</em>. Я изучаю:
-      <strong>"html, css, js, php, python, vue, react"</strong>
-    </p>
-    <h4>Список социальных сетей:</h4>
-    <a href="#" target="_blank">Instagram*</a>
-    |
-    <a href="#" target="_blank">Telegram</a>
-    |
-    <a href="#" target="_blank">YouTube</a>
-    <hr style="opacity: 30%" />
-    <small style="opacity: 30%"
-      >*Организация деятельность которой запрещена на территориии Российской
-      Федерации</small
-    >
+    <div class="container">
+      <div class="info">
+        <div>
+          <img class="profile-photo" src="./img/VG.jpg" alt="Изображение" />
+        </div>
+        <div class="info-text">
+          <h1>Василий Мавренков</h1>
 
-    <h2>Мои хобби</h2>
+          <p>
+            <em><strong>Я</strong> студент</em>
+            <br />
+            <strong>Изучаю: HTML, CSS, JS, PHP, Python, Vue, React</strong>
+          </p>
 
-    <ol>
-      <li>Путешествия</li>
-      <li>Блогинг</li>
-      <li>Горные лыжи</li>
-    </ol>
+          <div class="links">
+            <h4>Список социальных сетей:</h4>
 
-    <h2>Опыт работы</h2>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Название</th>
-          <th>Должность</th>
-          <th>Год</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Студент</td>
-          <td>Студент</td>
-          <td>2022-н.в</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-
-    <form>
-      <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="name" placeholder="Введите имя" />
+            <a href="#">Instagram*</a>
+            |
+            <a href="#">Telegram</a>
+            |
+            <a href="#">YouTube</a>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" name="email" placeholder="Введите email" />
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+
+        <ol class="list">
+          <li>Путешествия</li>
+          <li>Блогинг</li>
+          <li>Горные лыжи</li>
+        </ol>
       </div>
 
-      <div>
-        <label for="message">Ваше сообщение:</label>
-        <br />
-        <textarea
-          name="message"
-          cols="20"
-          rows="5"
-          placeholder="Введите сообщение…"
-        ></textarea>
+      <div class="card bg-red">
+        <h2>Опыт работы</h2>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Название</th>
+              <th>Должность</th>
+              <th>Год</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      <input type="submit" value="Отправить" />
-    </form>
+      <form class="form">
+        <h2>Связаться со мной</h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Введите имя" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="email" name="email" placeholder="Введите email" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Ваше сообщение:</label>
+          <textarea
+            name="message"
+            cols="20"
+            rows="5"
+            placeholder="Введите сообщение…"
+          ></textarea>
+        </div>
+
+        <input class="btn" type="submit" value="Отправить" />
+      </form>
+
+      <hr style="opacity: 30%" />
+      <small style="opacity: 30%"
+        >*Организация деятельность которой запрещена на территориии Российской
+        Федерации</small
+      >
+    </div>
 
     <script src="./script.js"></script>
   </body>
