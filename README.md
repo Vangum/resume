@@ -1,1 +1,1 @@
-<https://www.markdownguide.org](https://vangum.github.io/resume/>
+Это мой *[сайт](https://www.markdownguide.org](https://vangum.github.io/resume/)*.
